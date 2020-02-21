@@ -20,6 +20,7 @@
   
 </head>
 <body>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v6.0"></script>
 <!-- Preloader-->
 <div class='page-loader'>
 <div class='loader'>Loading...</div>
@@ -244,7 +245,7 @@ $("#btn1").trigger("click");
 					   
 					   $this.on('init', function(e, slick) {
 						    //$cariAnak.first().css('background-color',"white")
-							$thiss.find('.buku-tamu').html('<amp-facebook-comments width="552" height="310" layout="responsive" data-order-by="time" data-href="https://jhanter.github.io/jujufitra/"></amp-facebook-comments>')
+							$thiss.find('.buku-tamu').html("<div id='fb-root'></div><div class='fb-comments' data-href='https://jhanter.github.io/jujufitra/' data-width='100%' data-numposts='5'></div>")
 		
 						});
 					
